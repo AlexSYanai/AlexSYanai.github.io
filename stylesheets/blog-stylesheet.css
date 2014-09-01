@@ -42,7 +42,7 @@ a:hover{
 
 #right{
 	float: right;
-	position: absolute;
+	position: fixed;
 	top:0px;
 	bottom:0px;
 	width: 25%;
@@ -78,4 +78,9 @@ a:hover{
 	top:2em;
 	font-family:Impact, sans-serif;
 	font-size:2.5em;
+}
+
+#blog{
+	border-top:2px ridge black;
+	border-bottom:2px ridge black;
 }
