@@ -1,6 +1,11 @@
 body {
 	background-color: #FFFFFF;
-	font-family: Arial;
+	font-family: 'Open Sans Condensed';
+	font-size: 1.15em; 
+}
+
+#main{
+	position:relative;
 }
 
 a{
@@ -9,35 +14,35 @@ a{
 }
 
 a:hover{
-	color:#3366FF;
+	color:#006699;
 }
 
-#menu_bar{
-	position:static;
-	margin-left:10em;
-	margin-right:20em;
-    font-size:25px;
-    border: 1px solid black;
+nav{
+	width:40%;
+	margin-left:26%;
+	margin-right:36%;
+    font-size:1.5em;
+    border-bottom: 1px solid #006699;
 }
 
-#menu_bar ul{
+nav ul{
 	list-style-type: none;
-	margin-top:.5%;
-	margin-bottom:.5%;
+	margin-top:.25%;
+	margin-bottom:.25%;
 }
 
-#menu_bar li{
+nav li{
 	display:inline;
-	margin-left:1em;
-	margin-right:1em;;
+	margin-left:.85em;
+	margin-right:.85em;
 }
 
 #left{
-	float: left;
+	position: relative;
 	width: 60%;
-	margin-top: 5em;
-	margin-left: 5em;
-	bottom: 0px;
+	left: 5%;
+	top: 90%;
+	height:90%;
 }
 
 #right{
@@ -45,42 +50,101 @@ a:hover{
 	position: fixed;
 	top:0px;
 	bottom:0px;
-	width: 25%;
+	width: 20%;
 	height:100%;
-	right:5em;
-	background-color:#3366FF;
+	right:5%;
+	background-color:#006699;
 }
 
-#follow ul li img{
-	width:25%;
-	height:auto;
-	border: 2px solid black;
+#follow{
+	position:absolute;
+	top:37%;
 }
 
 #follow ul{
 	list-style-type: none;
-	margin-top:9em;
+	float:right;
+	width:20%;
+	position:relative;
+	right:28%;
+	margin-top:8%;
 }
 
-#me img{
+#follow ul li img{
+	width:95%;
+	border: 1px solid black;
+	margin-bottom:5%;
+}
+
+#prof{
 	width:30%;
-	height:auto;
 	float:left;
-	margin-right:1em;
-	margin-left:4em;
-	margin-top:5em;
-	border: 2px solid black;
+	position:relative;
+	left:17%;
+	box-shadow: 2px 2px 2px black;
 }
 
 #logo{
-	text-align: center;
+	position:absolute;
+	width:75%;
+	height:20%;
+	top:14%;
+	left:10%;
+}
+
+#title1{
 	position:relative;
-	top:2em;
-	font-family:Impact, sans-serif;
-	font-size:2.5em;
+	left:22%;
+}
+
+#title1 > p{
+	font-size:3em;
+}
+
+#border{
+	border-bottom: 1px solid white;
+    position: relative;
+    width:40%;
+    bottom:38%;
+    left:29%;
 }
 
 #blog{
-	border-top:2px ridge black;
-	border-bottom:2px ridge black;
+	border-top:1px solid #006699;
+}
+
+#share{
+	border-bottom:1px solid #006699;
+	font-size:1em;
+	margin-top:5%;
+	margin-bottom:2%;
+}
+
+#share ul{
+	position:relative;
+	right:4%;
+}
+
+#share ul li{
+	display:inline;
+	margin-right:1%;
+	border-right: 1px solid black;
+	padding-right:1%;
+}
+
+#share ul li:first-child{
+	border-right:initial;
+	margin-right:0%;
+}
+
+#share ul li:nth-child(5){
+	border-right:initial;
+	margin-right:0%;
+}
+
+footer{
+	position:relative;
+	bottom:0%;
+	left:5%;
+	font-size:.7em;
 }
