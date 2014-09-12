@@ -4,11 +4,6 @@ body {
 	font-size: 1.15em; 
 }
 
-#main{
-	width:100%;
-	margin:0 auto;
-}
-
 a{
 	text-decoration: none;
 	color:black;
@@ -17,6 +12,7 @@ a{
 a:hover{
 	color:#006699;
 }
+
 
 nav{
 	margin:auto;
@@ -39,6 +35,7 @@ nav li{
 	margin-right:.85em;
 }
 
+
 #follow{
 	position:relative;
 	width:50%;
@@ -55,7 +52,7 @@ nav li{
 }
 
 #title{
-	font-size:3.5em;
+	font-size:3em;
 	width:26.5%;
 	margin-right:0%;
 }
