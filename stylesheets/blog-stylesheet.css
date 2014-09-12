@@ -4,10 +4,6 @@ body {
 	font-size: 1.15em; 
 }
 
-#main{
-	position:relative;
-}
-
 a{
 	text-decoration: none;
 	color:black;
@@ -17,22 +13,27 @@ a:hover{
 	color:#006699;
 }
 
+
 nav{
-	width:40%;
-	margin-left:26%;
-	margin-right:36%;
-    font-size:1.5em;
-    border-bottom: 1px solid #006699;
+	position:relative;
+	width:45%;
+	margin-left:22%;
+    font-size:1.45em;    
 }
 
 nav ul{
 	list-style-type: none;
 	margin-top:.25%;
 	margin-bottom:.25%;
+	width:70%;
+	border-bottom: 1px solid #006699; 
 }
 
 nav li{
 	display:inline;
+}
+
+nav li:nth-child(2n){
 	margin-left:.85em;
 	margin-right:.85em;
 }
@@ -41,7 +42,7 @@ nav li{
 	position: relative;
 	width: 60%;
 	left: 5%;
-	top: 90%;
+	top: 50%;
 	height:90%;
 }
 
@@ -159,3 +160,66 @@ footer{
 	width:25%;
 	height:auto;
 }
+
+@media screen and (max-width: 1450px){  /*Still working on this - will update for mobile devices in future.*/
+
+	nav{
+		position:relative;
+		width:45%;
+		margin-left:17.5%;
+	    font-size:1.25em;    
+	}
+
+	nav ul{
+		list-style-type: none;
+		margin-top:.25%;
+		margin-bottom:.25%;
+		width:70%;
+		border-bottom: 1px solid #006699; 
+	}
+
+};
+
+/*@media screen and (max-width: 1150px){
+
+	nav{
+		position:relative;
+		width:45%;
+		margin-left:17.5%;
+	    font-size:1.25em;    
+	}
+
+	nav ul{
+		list-style-type: none;
+		margin-top:.25%;
+		margin-bottom:.25%;
+		width:70%;
+		border-bottom: 1px solid #006699; 
+	}
+
+	#prof{
+		width:25%;
+		float:left;
+		position:relative;
+		left:17%;
+		box-shadow: 2px 2px 2px black;
+	}
+
+	#logo{
+		position:absolute;
+		width:75%;
+		height:20%;
+		top:14%;
+		left:10%;
+	}
+
+	#title1{
+		position:relative;
+		left:12%;
+	}
+
+	#title1 > p{
+		font-size:2em;
+	}
+
+};*/
