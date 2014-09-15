@@ -161,7 +161,8 @@ footer{
 	height:auto;
 }
 
-@media screen and (max-width: 1450px){  /*Still working on this - will update for mobile devices in future.*/
+/* @media screen and (max-width: 1450px){  Still working on this - will update for mobile devices in future.
+
 
 	nav{
 		position:relative;
@@ -178,7 +179,7 @@ footer{
 		border-bottom: 1px solid #006699; 
 	}
 
-};
+};*/
 
 /*@media screen and (max-width: 1150px){
 
