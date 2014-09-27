@@ -118,6 +118,15 @@ nav li:nth-child(2n){
 	background-color:#FFFFC2;
 }
 
+.block {
+	margin:10px 0;
+	padding:15px;
+	font-family:Courier;
+	font-size:80%;
+	font-weight:normal;
+	background-color:#E6F0F5;
+}
+
 #share{
 	border-bottom:1px solid #006699;
 	font-size:1em;
