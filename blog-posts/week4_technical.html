@@ -51,24 +51,24 @@
 
 						group_by is a method that, when called on an array, iterates through and passes each element into a block of code. The method groups the elements in the array according to the parameters set in the block. Let's just jump into it.</br></br>
 
-						<div id="fact">(0..20).group_by{|num| num % 5}</br>
+						<div class="block">(0..20).group_by{|num| num % 5}</br>
 						=> {0=>[0, 5, 10, 15, 20], 1=>[1, 6, 11, 16], 2=>[2, 7, 12, 17], 3=>[3, 8, 13, 18], 4=>[4, 9, 14, 19]} </div></br>
 
 						Each number, from 0 to 20, is evaluated for the modulus of 5 (the remainder of the number divided by 5) and the numbers are then grouped in arrays with numbers of like value. This is a huge time savings! One method eliminates the need for a loop statement containing a number of conditional statements.</br></br>
 
 						group_by also works with an array of strings; for instance, let's say we want to group together our favorite evolutionary biologists according to the first letters of their names:</br></br>
 
-						<div id="fact">evolutionary_biologists = %w(Darwin Fisher Ohta Haldane Kimura Dobzhansky Muller Ford Hardy Hamilton)</br>
+						<div class="block">evolutionary_biologists = %w(Darwin Fisher Ohta Haldane Kimura Dobzhansky Muller Ford Hardy Hamilton)</br>
 						=> ["Darwin", "Fisher", "Ohta", "Haldane", "Kimura", "Dobzhansky", "Muller", "Ford", "Hardy", "Hamilton"]</div></br>
 
 						It's important to note the output of group_by: a hash. The method will evaluate the string's first letter (the letter at index 0). The first letter then becomes a key in the hash just created, with the element in the block being assigned as that key's value in an array. If, then, a new element is passed into the block with the same first letter (key), that element is then added as a value in that key's array.</br></br>
 
-						<div id="fact">evolutionary_biologists.group_by{|n| n[0]}</br>
+						<div class="block">evolutionary_biologists.group_by{|n| n[0]}</br>
 						=> {"D"=>["Darwin", "Dobzhansky"], "F"=>["Fisher", "Ford"], "O"=>["Ohta"], "H"=>["Haldane", "Hardy", "Hamilton"], "K"=>["Kimura"], "M"=>["Muller"]}</div></br>
 
 						We can even group them by the lengths of their names! Something interesting to note here is that the keys and the values are not of the same type - the former, an integer, the latter, a string.</br></br>
 
-						<div id="fact">evo_biologists.group_by{|name| name.length}</br>
+						<div class="block">evo_biologists.group_by{|name| name.length}</br>
 						=> {6=>["Darwin", "Fisher", "Kimura", "Muller"], 4=>["Ohta", "Ford"], 7=>["Haldane"], 10=>["Dobzhansky"], 5=>["Hardy"], 8=>["Hamilton"]}</div></br></br>
 
 						While the group_by method has many applications for both arrays and hashes, its easy to see from these relatively simple examples how versatile and useful it can be. Writing loops to group elements together is time consuming and decreases code readability; being able to reduce the process to one or two lines in invaluable in many different situations. 
