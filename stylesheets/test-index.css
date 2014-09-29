@@ -63,3 +63,12 @@ a:hover {
 a:hover + #about_me{
 	display: block;
 }
+
+#pic {
+  position: fixed;
+  float:right;
+  bottom:0;
+  right:0;
+  margin-right:5%;
+  width:14%;
+}
