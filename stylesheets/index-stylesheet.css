@@ -21,6 +21,17 @@ nav{
     border-bottom: 1px solid #006699;
 }
 
+#test_index{
+	width:100%;
+	height:6%;
+	position:fixed;
+	margin-top:5%;
+	background-color:#5C9DFF;
+	border:0;
+	color:white;
+	text-align: center;
+}
+
 nav ul{
 	list-style-type: none;
 	margin-top:.25%;
