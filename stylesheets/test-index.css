@@ -7,9 +7,9 @@ html, body {
 }
 
 #main {
-  width: 92.5%;
-  font-family: 'Open Sans Condensed';
-  margin-left:7.5%;
+ 	width: 92.5%;
+  	font-family: 'Open Sans Condensed';
+  	margin-left:7.5%;
 }
 
 #top{
@@ -72,4 +72,20 @@ a:hover + #about_me{
   margin-right:5%;
   width:14%;
   opacity: .75;
+}
+
+#bloglinks{
+	position:absolute;
+	left:40%;
+	top:40%;
+}
+
+#bloglinks > a{
+	font-size:2em;
+	opacity:.8;
+	font-weight:normal;
+}
+
+#bloglinks > a:hover{
+	opacity:1;
 }
