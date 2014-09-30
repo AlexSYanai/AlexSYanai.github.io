@@ -76,12 +76,12 @@ a:hover + #about_me{
 
 #bloglinks{
 	position:absolute;
-	left:40%;
-	top:40%;
+	left:28%;
+	top:23%;
 }
 
 #bloglinks > a{
-	font-size:2em;
+	font-size:1.2em;
 	opacity:.8;
 	font-weight:normal;
 }
