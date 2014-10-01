@@ -2,26 +2,48 @@
 <html>
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-		<link type="text/css" rel="stylesheet" href="test-blog-sheet.css"/>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
 		<title>Alex Yanai Developer - Design</title>
 	</head>
 	<body>
-		<section id="main">
+		<div id="main">
 			<header>
 				<nav>
-					<a href="test-bloghome.html">Blog&#160;</a>
-					<a href="http://alexsyanai.github.io/portfolio.html">Work</a>
+					<ul>
+						<li><a href="http://alexsyanai.github.io/">Home</a></li>
+						<li><a href="http://alexsyanai.github.io/blogposts.html">Blog</a></li>
+						<li><a href="http://alexsyanai.github.io/about.html">About Me</a></li>
+						<li><a href="http://alexsyanai.github.io/portfolio.html">Portfolio</a></li>
+						<li><a href="http://alexsyanai.github.io/contact.html">Contact</a></li>
+					</ul>
 				</nav>
 			</header>
 
-			<section id="left">
-				<section id="title">
+			<div id="right">
+				<div id="logo">
+					<div id="title1"><p>Alex Yanai</p></div>
+						<div id="border"></div>
+				</div>
+				<div id="follow">
+					<img id="prof" src="../imgs/ProfPic.jpg">
+					<ul>
+						<li><a href="https://www.linkedin.com/pub/AlexYanai"><img src="../imgs/linkedinlogo.jpg"></a></li>
+						<li><a href="https://twitter.com/AlexSYanai"><img src="../imgs/TwitterLogo.jpg"></a></li>
+						<li><a href="https://www.facebook.com/AlexYanai"><img src="../imgs/facebooklogo.jpg"></a></li>
+						<li><a href="https://github.com/AlexSYanai"><img src="../imgs/githublogo.jpg"></a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="../test-index.html">Thinking about changing my site around - click here to see it. Let me know what you think!</a></p>
+			<div id="left">
+				<div id="title">
 					<h2>Ruby Classes: How to Pick a Restaurant</h2>
-				</section>
-				<section id="time">
+				</div>
+				<div id="time">
 					<p>September 27th, 2014</p>
-				</section>
-				<section id="blog">
+				</div>
+				<div id="blog">
 					<section id="content">
 						<p>Ruby is a powerful programming language which, due to its focus on productivity and good user interface, is also relatively accessible to beginners. Ruby  is an object-oriented programming language: almost everything in Ruby -  Integers, Strings, Arrays, Hashes - is an object that can understand specific messages. A message sent to an object corresponds to a method, a routine that the object can initiate, allowing objects to store data, interact with each other, or perform any number of complicated actions.<br><br>
 
@@ -105,9 +127,9 @@
 							<li><a href="Mailto@">Email</a></li>
 						</ul>
 					</section>
-				</section>
-			</section>
+				</div>
+			</div>
 			<footer><p>Alex Yanai - I'm not sure what to write here - 2014</p></footer>
-		</section>
+		</div>
 	</body>
 </html>

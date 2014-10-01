@@ -1,12 +1,28 @@
 body {
-	background-color: #FFFFFF;
+	background-color: #252d36;
 	font-family: 'Open Sans Condensed';
-	font-size: 1.15em; 
+	font-size: 1.15em;
+	margin-left: 3%;
+	margin-right: 2%;
+	margin-top:0;
+	margin-bottom:0;
+  	height: 94%; 
+}
+
+#main{
+	background-color: #FFFFFF;
+	width: 97%;
+	height:100%;
+	opacity:.93;
+	margin:0;
+	border:0;
+	padding-top:2.5%;
+	margin-bottom:-5%;
 }
 
 a{
 	text-decoration: none;
-	color:black;
+	color:#252d36;
 }
 
 a:hover{
@@ -14,99 +30,23 @@ a:hover{
 }
 
 nav{
-	position:relative;
+	position:fixed;
 	width:45%;
-	margin-left:22%;
-    font-size:1.45em;    
+	left:85%;
+	top:7%;
+    font-size:1.45em; 
+    margin:0;   
 }
 
-nav ul{
-	list-style-type: none;
-	margin-top:.25%;
-	margin-bottom:.25%;
-	width:70%;
-	border-bottom: 1px solid #006699; 
-}
-
-nav li{
-	display:inline;
-}
-
-nav li:nth-child(2n){
-	margin-left:.85em;
-	margin-right:.85em;
-}
 
 #left{
 	position: relative;
-	width: 60%;
-	left: 5%;
-	top: 50%;
-	height:90%;
-}
-
-#right{
-	float: right;
-	position: fixed;
-	top:0px;
-	bottom:0px;
-	width: 20%;
-	height:100%;
+	width: 75%;
+	left: 11%;
 	right:5%;
-	background-color:#006699;
-}
-
-#follow{
-	position:absolute;
-	top:37%;
-}
-
-#follow ul{
-	list-style-type: none;
-	float:right;
-	width:20%;
-	position:relative;
-	right:28%;
-	margin-top:8%;
-}
-
-#follow ul li img{
-	width:95%;
-	border: 1px solid black;
-	margin-bottom:5%;
-}
-
-#prof{
-	width:30%;
-	float:left;
-	position:relative;
-	left:17%;
-	box-shadow: 2px 2px 2px black;
-}
-
-#logo{
-	position:absolute;
-	width:75%;
-	height:20%;
-	top:14%;
-	left:10%;
-}
-
-#title1{
-	position:relative;
-	left:22%;
-}
-
-#title1 > p{
-	font-size:3em;
-}
-
-#border{
-	border-bottom: 1px solid white;
-    position: relative;
-    width:40%;
-    bottom:38%;
-    left:29%;
+	top: 4.5%;
+	bottom:0%;
+	height:100%;
 }
 
 #blog{
@@ -123,14 +63,14 @@ nav li:nth-child(2n){
 	font-family:Courier;
 	font-size:80%;
 	font-weight:normal;
-	background-color:#E6F0F5;
+	background-color:#E5E6E7;
 }
 
 #share{
 	border-bottom:1px solid #006699;
 	font-size:1em;
 	margin-top:5%;
-	margin-bottom:2%;
+	margin-bottom:2.5%;
 }
 
 #share ul{
@@ -141,7 +81,7 @@ nav li:nth-child(2n){
 #share ul li{
 	display:inline;
 	margin-right:1%;
-	border-right: 1px solid black;
+	border-right: 1px solid #3a4654;
 	padding-right:1%;
 }
 
@@ -157,7 +97,6 @@ nav li:nth-child(2n){
 
 footer{
 	position:relative;
-	bottom:0%;
 	left:5%;
 	font-size:.7em;
 }
@@ -172,67 +111,3 @@ footer{
 	width:25%;
 	height:auto;
 }
-
-/* @media screen and (max-width: 1450px){  Still working on this - will update for mobile devices in future.
-
-
-	nav{
-		position:relative;
-		width:45%;
-		margin-left:17.5%;
-	    font-size:1.25em;    
-	}
-
-	nav ul{
-		list-style-type: none;
-		margin-top:.25%;
-		margin-bottom:.25%;
-		width:70%;
-		border-bottom: 1px solid #006699; 
-	}
-
-};*/
-
-/*@media screen and (max-width: 1150px){
-
-	nav{
-		position:relative;
-		width:45%;
-		margin-left:17.5%;
-	    font-size:1.25em;    
-	}
-
-	nav ul{
-		list-style-type: none;
-		margin-top:.25%;
-		margin-bottom:.25%;
-		width:70%;
-		border-bottom: 1px solid #006699; 
-	}
-
-	#prof{
-		width:25%;
-		float:left;
-		position:relative;
-		left:17%;
-		box-shadow: 2px 2px 2px black;
-	}
-
-	#logo{
-		position:absolute;
-		width:75%;
-		height:20%;
-		top:14%;
-		left:10%;
-	}
-
-	#title1{
-		position:relative;
-		left:12%;
-	}
-
-	#title1 > p{
-		font-size:2em;
-	}
-
-};*/

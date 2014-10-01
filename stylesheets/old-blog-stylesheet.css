@@ -1,0 +1,238 @@
+body {
+	background-color: #FFFFFF;
+	font-family: 'Open Sans Condensed';
+	font-size: 1.15em; 
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+a:hover{
+	color:#006699;
+}
+
+nav{
+	position:relative;
+	width:45%;
+	margin-left:22%;
+    font-size:1.45em;    
+}
+
+nav ul{
+	list-style-type: none;
+	margin-top:.25%;
+	margin-bottom:.25%;
+	width:70%;
+	border-bottom: 1px solid #006699; 
+}
+
+nav li{
+	display:inline;
+}
+
+nav li:nth-child(2n){
+	margin-left:.85em;
+	margin-right:.85em;
+}
+
+#left{
+	position: relative;
+	width: 60%;
+	left: 5%;
+	top: 50%;
+	height:90%;
+}
+
+#right{
+	float: right;
+	position: fixed;
+	top:0px;
+	bottom:0px;
+	width: 20%;
+	height:100%;
+	right:5%;
+	background-color:#006699;
+}
+
+#follow{
+	position:absolute;
+	top:37%;
+}
+
+#follow ul{
+	list-style-type: none;
+	float:right;
+	width:20%;
+	position:relative;
+	right:28%;
+	margin-top:8%;
+}
+
+#follow ul li img{
+	width:95%;
+	border: 1px solid black;
+	margin-bottom:5%;
+}
+
+#prof{
+	width:30%;
+	float:left;
+	position:relative;
+	left:17%;
+	box-shadow: 2px 2px 2px black;
+}
+
+#logo{
+	position:absolute;
+	width:75%;
+	height:20%;
+	top:14%;
+	left:10%;
+}
+
+#title1{
+	position:relative;
+	left:22%;
+}
+
+#title1 > p{
+	font-size:3em;
+}
+
+#border{
+	border-bottom: 1px solid white;
+    position: relative;
+    width:40%;
+    bottom:38%;
+    left:29%;
+}
+
+#blog{
+	border-top:1px solid #006699;
+}
+
+#fact {
+	background-color:#FFFFC2;
+}
+
+.block {
+	margin:10px 0;
+	padding:15px;
+	font-family:Courier;
+	font-size:80%;
+	font-weight:normal;
+	background-color:#E6F0F5;
+}
+
+#share{
+	border-bottom:1px solid #006699;
+	font-size:1em;
+	margin-top:5%;
+	margin-bottom:2%;
+}
+
+#share ul{
+	position:relative;
+	right:4%;
+}
+
+#share ul li{
+	display:inline;
+	margin-right:1%;
+	border-right: 1px solid black;
+	padding-right:1%;
+}
+
+#share ul li:first-child{
+	border-right:initial;
+	margin-right:0%;
+}
+
+#share ul li:nth-child(5){
+	border-right:initial;
+	margin-right:0%;
+}
+
+footer{
+	position:relative;
+	bottom:0%;
+	left:5%;
+	font-size:.7em;
+}
+
+.content_image{
+	display:inline;
+	width:10%;
+	margin-left:25%;
+}
+
+.content_image img{
+	width:25%;
+	height:auto;
+}
+
+/* @media screen and (max-width: 1450px){  Still working on this - will update for mobile devices in future.
+
+
+	nav{
+		position:relative;
+		width:45%;
+		margin-left:17.5%;
+	    font-size:1.25em;    
+	}
+
+	nav ul{
+		list-style-type: none;
+		margin-top:.25%;
+		margin-bottom:.25%;
+		width:70%;
+		border-bottom: 1px solid #006699; 
+	}
+
+};*/
+
+/*@media screen and (max-width: 1150px){
+
+	nav{
+		position:relative;
+		width:45%;
+		margin-left:17.5%;
+	    font-size:1.25em;    
+	}
+
+	nav ul{
+		list-style-type: none;
+		margin-top:.25%;
+		margin-bottom:.25%;
+		width:70%;
+		border-bottom: 1px solid #006699; 
+	}
+
+	#prof{
+		width:25%;
+		float:left;
+		position:relative;
+		left:17%;
+		box-shadow: 2px 2px 2px black;
+	}
+
+	#logo{
+		position:absolute;
+		width:75%;
+		height:20%;
+		top:14%;
+		left:10%;
+	}
+
+	#title1{
+		position:relative;
+		left:12%;
+	}
+
+	#title1 > p{
+		font-size:2em;
+	}
+
+};*/

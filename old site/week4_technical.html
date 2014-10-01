@@ -6,21 +6,45 @@
 		<title>Alex Yanai Developer - Design</title>
 	</head>
 	<body>
-		<section id="main">
+		<div id="main">
 			<header>
 				<nav>
-					<a href="blogposts.html">Blog&#160;</a>
-					<a href="../portfolio.html">Work</a>
+					<ul>
+						<li><a href="http://alexsyanai.github.io/">Home</a></li>
+						<li><a href="http://alexsyanai.github.io/blogposts.html">Blog</a></li>
+						<li><a href="http://alexsyanai.github.io/about.html">About Me</a></li>
+						<li><a href="http://alexsyanai.github.io/portfolio.html">Portfolio</a></li>
+						<li><a href="http://alexsyanai.github.io/contact.html">Contact</a></li>
+					</ul>
 				</nav>
 			</header>
 
-			<section id="left">
-				<section id="title">
+			<div id="right">
+				<div id="logo">
+					<div id="title1"><p>Alex Yanai</p></div>
+						<div id="border"></div>
+				</div>
+				<div id="follow">
+					<img id="prof" src="../imgs/ProfPic.jpg">
+					<ul>
+						<li><a href="https://www.linkedin.com/pub/AlexYanai"><img src="../imgs/linkedinlogo.jpg"></a></li>
+						<li><a href="https://twitter.com/AlexSYanai"><img src="../imgs/TwitterLogo.jpg"></a></li>
+						<li><a href="https://www.facebook.com/AlexYanai"><img src="../imgs/facebooklogo.jpg"></a></li>
+						<li><a href="https://github.com/AlexSYanai"><img src="../imgs/githublogo.jpg"></a></li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<div id="left">
+				<div id="title">
 					<h2>Enumerable#group_by - For When You Feel Like Organizing</h2>
-				</section>
-				<section id="time">
+				</div>
+				<div id="time">
 					<p>September 21st, 2014</p>
-				</section>
+				</div>
+				<div id="blog">
+					<section id="content">
 						<p>If you're learning to code, chances are you've spent quite a bit of time recently writing loops. And for good reason! Loops are powerful tools that are a part of every programming language, but having to write a new 'for' loop to do every little task can be time consuming and annoying. Luckily, Ruby has a number of useful and versatile methods that can be used to perform common tasks with a fraction of the code.</br></br>
 
 						One such method is 'Enumerable#group_by'.</br></br>
@@ -47,7 +71,9 @@
 						<div class="block">evo_biologists.group_by{|name| name.length}</br>
 						=> {6=>["Darwin", "Fisher", "Kimura", "Muller"], 4=>["Ohta", "Ford"], 7=>["Haldane"], 10=>["Dobzhansky"], 5=>["Hardy"], 8=>["Hamilton"]}</div></br></br>
 
-						While the group_by method has many applications for both arrays and hashes, its easy to see from these relatively simple examples how versatile and useful it can be. Writing loops to group elements together is time consuming and decreases code readability; being able to reduce the process to one or two lines in invaluable in many different situations.</p>	
+						While the group_by method has many applications for both arrays and hashes, its easy to see from these relatively simple examples how versatile and useful it can be. Writing loops to group elements together is time consuming and decreases code readability; being able to reduce the process to one or two lines in invaluable in many different situations. 
+
+						</p>	
 					</section>
 					<section id="share">
 						<ul>
@@ -58,9 +84,9 @@
 							<li><a href="Mailto@">Email</a></li>
 						</ul>
 					</section>
-				</section>
-			</section>
+				</div>
+			</div>
 			<footer><p>Alex Yanai - I'm not sure what to write here - 2014</p></footer>
-		</section>
+		</div>
 	</body>
 </html>
