@@ -109,14 +109,9 @@ a:hover + #blog_prev{
 
 @media screen and (max-width: 1520px){
 
-#name {
-	font-size:10em;
-	margin-bottom:-1.8%;
-}
-
-#subname {
-	font-size:.8em;
-	padding-top:.20em;
+#subname{
+	font-size:1em;
+	padding-top:.25em;
 }
 
 #links {
@@ -173,6 +168,11 @@ a:hover + #about_me {
 
 @media screen and (max-width: 1100px){
 
+#subname {
+	font-size:1em;
+	padding-top:.25em;
+}
+
 #links {
 	padding:18px;
 	line-height:2.8em;
@@ -210,7 +210,7 @@ a:hover + #about_me {
 #bloglinks {
 	position:absolute;
 	left:34%;
-	top:20%;
+	top:30%;
 }
 
 #bloglinks > a {
@@ -225,21 +225,29 @@ a:hover + #about_me {
 
 }
 
-@media handheld {
+@media handheld{
 
-#name {
-	font-size:4.5em;
-	margin-bottom:-1.8%;
+#top{
+	color:white;
+	opacity:.55;
+	margin-left:2.25%;
+	margin-top:7%;
+	letter-spacing:.28em;
+}
+
+#name{
+	font-size:2.5em;
+	margin-bottom:-5%;
 }
 
 #subname {
-	font-size:2.4em;
-	padding-top:.20em;
+	font-size:1.5em;
+	padding-top:.25em;
 }
 
 #links {
 	padding:18px;
-	line-height:2.75em;
+	line-height:4.5em;
 	margin-top:-5%;
 	letter-spacing:.18em;
 }
@@ -250,7 +258,7 @@ a {
 	font-weight:bold;
 	opacity:.75;
 	transition:0.6s;
-	font-size:11em;
+	font-size:6em;
 }
 
 a:hover {
@@ -263,7 +271,7 @@ a:hover {
 	line-height:0.5em;
 	font-weight:normal;
 	letter-spacing:0px;
-	font-size:2.25em;
+	font-size:.75em;
 	opacity:.9;
 }
 
@@ -273,12 +281,12 @@ a:hover + #about_me {
 
 #bloglinks {
 	position:absolute;
-	left:4%;
-	top:30%;
+	left:10%;
+	top:95%;
 }
 
 #bloglinks > a {
-	font-size:4em;
+	font-size: 2em;
 	opacity:.8;
 	font-weight:normal;
 }
@@ -292,8 +300,9 @@ a:hover + #about_me {
   float:right;
   bottom:0;
   left:0;
-  margin-left:5%;
-  width:30%;
+  margin-right:5%;
+  width:14%;
   opacity: .75;
 }
+
 }
