@@ -110,7 +110,7 @@ a:hover + #blog_prev{
 @media screen and (max-width: 1520px){
 
 #name {
-	font-size:1.5em;
+	font-size:10em;
 	margin-bottom:-1.8%;
 }
 
@@ -225,7 +225,24 @@ a:hover + #about_me {
 
 }
 
-@media screen and (max-height: 615px){
+@media handheld {
+
+html, body {
+  margin: 0;
+  border: 0;
+  height: 93.01%;
+  font-size: 200%;
+}
+
+#name {
+	font-size:1.5em;
+	margin-bottom:-1.8%;
+}
+
+#subname {
+	font-size:.8em;
+	padding-top:.20em;
+}
 
 #links {
 	padding:18px;
@@ -263,8 +280,8 @@ a:hover + #about_me {
 
 #bloglinks {
 	position:absolute;
-	left:9.5%;
-	top:70%;
+	left:4%;
+	top:50%;
 }
 
 #bloglinks > a {
@@ -277,4 +294,13 @@ a:hover + #about_me {
 	opacity:1;
 }
 
+#pic {
+  position: fixed;
+  float:left;
+  bottom:0;
+  left:0;
+  margin-left:5%;
+  width:25%;
+  opacity: .75;
+}
 }
