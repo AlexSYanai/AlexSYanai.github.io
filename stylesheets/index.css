@@ -281,13 +281,13 @@ a:hover {
 }
 
 a:hover + #about_me {
-	display: block;
+	display: inline-block;
 }
 
 #bloglinks {
 	position:absolute;
-	left:10%;
-	top:95%;
+	left:8.5%;
+	bottom:5%;
 }
 
 #bloglinks > a {
