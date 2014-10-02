@@ -225,7 +225,12 @@ a:hover + #about_me {
 
 }
 
-@media handheld and (max-height: 906px){
+@media handheld{
+
+
+#main{
+	width:601px;
+}
 
 #top{
 	color:white;
