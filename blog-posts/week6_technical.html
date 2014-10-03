@@ -16,7 +16,7 @@
 
 			<section id="left">
 				<section id="title">
-					<h2>Ruby: Blocks, Procs, and Lambdas </h2>
+					<h2>Ruby: Blocks, Procs, and Lambdas</h2>
 				</section>
 				<section id="time">
 					<p>October 3rd, 2014</p>
@@ -56,7 +56,7 @@
 
 						<p class="block">Callinga a Proc:<br>
 						&#160;&#160;say_hi = Proc.new {puts "I'm calling myself!"}<br>
-						&#160;&#160;say_hi.call
+						&#160;&#160;say_hi.call<br>
 						&#160;&#160;&#160;&#160;=> "I'm calling myself!</p><br><br>
 
 						We probably wouldn't be talking about two different things if they were identical so...What's the difference between procs and lambdas? There are two main differences generally mentioned when talking about procs and lambdas:<br><br>
@@ -71,18 +71,18 @@
 						&#160;&#160;def hi_proc<br>
 						&#160;&#160;&#160;&#160;hey = Proc.new{return "Return from the inside!"}<br>
 						&#160;&#160;&#160;&#160;hey.call<br>
-						&#160;&#160;&#160;&#160;"Return from the outside!"
-						&#160;&#160;end
-						&#160;&#160;&#160;&#160;puts hi_proc
+						&#160;&#160;&#160;&#160;"Return from the outside!"<br>
+						&#160;&#160;end<br>
+						&#160;&#160;&#160;&#160;puts hi_proc<br>
 						&#160;&#160;&#160;&#160;=> "Return from the inside!"</p><br>
 
 						<p class="block">Returnings a value: Lambda<br>
 						&#160;&#160;def hi_lambda<br>
 						&#160;&#160;&#160;&#160;hey = Proc.new{return "Return from the inside!"}<br>
 						&#160;&#160;&#160;&#160;hey.call<br>
-						&#160;&#160;&#160;&#160;"Return from the outside!"
-						&#160;&#160;end
-						&#160;&#160;&#160;&#160;puts hi_lambda
+						&#160;&#160;&#160;&#160;"Return from the outside!"<br>
+						&#160;&#160;end<br>
+						&#160;&#160;&#160;&#160;puts hi_lambda<br>
 						&#160;&#160;&#160;&#160;=> "Return from the outside!"</p><br><br>
 
 						In the former, the method is called and runs until the proc is called, at which point the proc returns its string and...that's it! In contrast, the lambda version of the code continues running through the whole method - thus, the method string is printed. In other words, if containing 'return', a proc will return a value outside of the method - becoming the method output. A lambda containing 'return' will return its value within the method; the value is available to both be used and superseded within the method, depending on the method.</p>	
