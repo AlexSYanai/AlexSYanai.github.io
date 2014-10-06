@@ -94,7 +94,7 @@ a:hover + #blog_prev{
 #bloglinks{
 	position:absolute;
 	left:28%;
-	top:25%;
+	top:20%;
 }
 
 #bloglinks > a{
