@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+		<title>Alex Yanai Developer - Design</title>
+	</head>
+	<body>
+		<section id="main">
+			<header>
+				<nav>
+					<a href="../blogposts.html">Blog&#160;</a>
+					<a href="../portfolio.html">Work</a>
+				</nav>
+			</header>
+
+			<section id="left">
+				<section id="title">
+					<h2>Ruby: Blocks, Procs, and Lambdas</h2>
+				</section>
+				<section id="time">
+					<p>October 3rd, 2014</p>
+				</section>
+				<section id="blog">
+					<section id="content">
+						<p>As you become more confident in Ruby, there are some things that become a matter of routine: one of these is writing blocks of code.<br><br>
+
+						<p class="block">Block Syntax:<br>
+						&#160;&#160;do |i|<br>
+						&#160;&#160;&#160;&#160;puts i<br>
+						&#160;&#160;end<br>
+						or<br>
+						&#160;&#160;{|i| puts i}</p><br><br>
+
+						A block is section of code to be executed; it is written between the keywords 'do' and 'end', which can be replaced by a set of { }. As a departure from one of the general features of Ruby, blocks are not objects - they can't, for example, be saved to variables and be reused later in the code. Blocks can be used or combined with methods (at most one block passed to one method at once) such as .each in order to loop through a number of elements. Really, a block is just part of the syntax used to call a method, and it doesn't do anything when on its own.<br><br>
+
+						<p class="block">Using a block:<br>
+						&#160;&#160;array = [1, 2, 3, 4, 5]<br><br>
+						&#160;&#160;array.each{|i| puts i}<br>
+						&#160;&#160;&#160;&#160;=> Will print each integer to console</p><br><br>
+
+						Blocks are incredibly useful and common when writing code, but they have a number of shortcomings in certain situations. In order to do more with less (keep your code DRY - Don't Repeat Yourself), you can use procs and lambdas; these objects both allow you to save and reuse blocks of code.<br><br> 
+
+						
+						<p class="block">Proc Syntax:<br>
+						&#160;&#160;print_values = Proc.new {|i| puts i}<br><br>
+						To call in method:<br>
+						&#160;&#160;&print_values</p><br><br>
+
+						<p class="block">Lambda Syntax:<br>
+						&#160;&#160;print_values = lambda{|i| puts i}<br>
+						To call in method:<br>
+						&#160;&#160;&print_values</p><br><br>
+
+						The first thing you'll probably notice is how similar procs and lambdas look: the syntax is almost the same. Both procs and lambdas are actually Proc objects - that is, they're both instances of the Proc class (notice that the class is capitalized, as opposed to all previous times the word's been written). Lambdas and procs share many features, chief among them that they are objects that can be saved, stored in variables, and reused repeatedly. Unlike blocks, you can pass multiple procs or lambdas to methods and all will be called (if applicable). Lambdas and procs stand alone, and can be called directly if desired using the .call method:<br><br>
+
+						<p class="block">Callinga a Proc:<br>
+						&#160;&#160;say_hi = Proc.new {puts "I'm calling myself!"}<br>
+						&#160;&#160;say_hi.call<br>
+						&#160;&#160;&#160;&#160;=> "I'm calling myself!</p><br><br>
+
+						We probably wouldn't be talking about two different things if they were identical so...What's the difference between procs and lambdas? There are two main differences generally mentioned when talking about procs and lambdas:<br><br>
+						&#160;&#160;1.How each deals with arguments<br>
+						&#160;&#160;2.How they act when using 'return'<br><br>
+
+						Procs and lambdas deal with arguments differently - specifically how they act when too many arguments are passed to them. Lambdas check the number of arguments passed to them to ensure that it is the proper number while procs do not. This is important when deciding which one to use and how each will act: lambdas, upon receiving the wrong number of arguments, raise an error, while procs will run their code and ignore (will assign 'nil' values to) any superfluous arguments. If no arguments are given and some are expect, lambdas will raise an error, while procs will return nil.<br><br>
+
+						Lambdas and procs also act differently when containing the keyword 'return'. When a proc contains return, it executes and returns as soon as it is called, regardless of what comes after it, while a comparable lambda, when called, will return and then pass control back to the method where it was called:<br><br>
+
+						<p class="block">Returnings a value: Proc<br>
+						&#160;&#160;def hi_proc<br>
+						&#160;&#160;&#160;&#160;hey = Proc.new{return "Return from the inside!"}<br>
+						&#160;&#160;&#160;&#160;hey.call<br>
+						&#160;&#160;&#160;&#160;"Return from the outside!"<br>
+						&#160;&#160;end<br>
+						&#160;&#160;&#160;&#160;puts hi_proc<br>
+						&#160;&#160;&#160;&#160;=> "Return from the inside!"</p><br>
+
+						<p class="block">Returnings a value: Lambda<br>
+						&#160;&#160;def hi_lambda<br>
+						&#160;&#160;&#160;&#160;hey = Proc.new{return "Return from the inside!"}<br>
+						&#160;&#160;&#160;&#160;hey.call<br>
+						&#160;&#160;&#160;&#160;"Return from the outside!"<br>
+						&#160;&#160;end<br>
+						&#160;&#160;&#160;&#160;puts hi_lambda<br>
+						&#160;&#160;&#160;&#160;=> "Return from the outside!"</p><br><br>
+
+						In the former, the method is called and runs until the proc is called, at which point the proc returns its string and...that's it! In contrast, the lambda version of the code continues running through the whole method - thus, the method string is printed. In other words, if containing 'return', a proc will return a value outside of the method - becoming the method output. A lambda containing 'return' will return its value within the method; the value is available to both be used and superseded within the method, depending on the method.</p>	
+					</section>
+					<section id="share">
+						<ul>
+							<li>Share Post:</li>
+							<li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+							<li><a href="https://twitter.com/">Twitter</a></li>
+							<li><a href="https://www.facebook.com/">Facebook</a></li>
+							<li><a href="Mailto@">Email</a></li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<footer><p>Alex Yanai - I'm not sure what to write here - 2014</p></footer>
+		</section>
+	</body>
+</html>
