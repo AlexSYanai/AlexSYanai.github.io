@@ -16,77 +16,44 @@
 
 			<section id="left">
 				<section id="title">
-					<h2>Ruby: Blocks, Procs, and Lambdas</h2>
+					<h2>SQL Injections</h2>
 				</section>
 				<section id="time">
-					<p>October 3rd, 2014</p>
+					<p>October 12th, 2014</p>
 				</section>
 				<section id="blog">
 					<section id="content">
-						<p>As you become more confident in Ruby, there are some things that become a matter of routine: one of these is writing blocks of code.<br><br>
+						<p>There are a large number of technical terms that make their way to the public consciousness; one of these is the SQL injection. An SQL injection is a malicious technique where SQL commands are inserted into an SQL statement ('injection') into dynamic web-applications. The code is inserted directly into web page or in applications via user input. The existing code is altered and, subsequently, the behavior of the application is altered, leading to the potential exploitation or modification of database data. The SQL injection is dangerous because of the often sensitive data stored in databases: anything from usernames and passwords to credit card information.<br><br>
 
-						<p class="block">Block Syntax:<br>
-						&#160;&#160;do |i|<br>
-						&#160;&#160;&#160;&#160;puts i<br>
-						&#160;&#160;end<br>
-						or<br>
-						&#160;&#160;{|i| puts i}</p><br><br>
+						For example: imagine a piece of code that takes user input, user_name and pass, strings, and a succesful query with the input credentials will return the data within the database.<br><br>
 
-						A block is section of code to be executed; it is written between the keywords 'do' and 'end', which can be replaced by a set of { }. As a departure from one of the general features of Ruby, blocks are not objects - they can't, for example, be saved to variables and be reused later in the code. Blocks can be used or combined with methods (at most one block passed to one method at once) such as .each in order to loop through a number of elements. Really, a block is just part of the syntax used to call a method, and it doesn't do anything when on its own.<br><br>
+						<p class="block">user_name = get_input<br>
+						user_pass = get_input<br>
+						sql_query = "SELECT * FROM user_names WHERE user_name = '#{user_name}' AND user_pass = '#{user_pass}'"<br>
+						$db.execute(sql_query)</p><br><br>
 
-						<p class="block">Using a block:<br>
-						&#160;&#160;array = [1, 2, 3, 4, 5]<br><br>
-						&#160;&#160;array.each{|i| puts i}<br>
-						&#160;&#160;&#160;&#160;=> Will print each integer to console</p><br><br>
+						If all goes as designed, and the code runs, the query will return the correct data for the given user_name. The problem arises, however, due to the structure of the code. To extend the the example, imagine that some malicious user attempted to inpute the following:
 
-						Blocks are incredibly useful and common when writing code, but they have a number of shortcomings in certain situations. In order to do more with less (keep your code DRY - Don't Repeat Yourself), you can use procs and lambdas; these objects both allow you to save and reuse blocks of code.<br><br> 
+						<p class="block">user_name = ' OR ""=='<br>
+						user_pass = ' OR ""=='</p><br><br>
 
+						This would lead to the following SQL query being input:<br>
+
+						<p class="block">sql_query = "SELECT * FROM user_names WHERE user_name = '' OR '' = '' AND user_pass = '' OR '' = ''<br>
+						$db.execute(sql_query)</p><br><br>
 						
-						<p class="block">Proc Syntax:<br>
-						&#160;&#160;print_values = Proc.new {|i| puts i}<br><br>
-						To call in method:<br>
-						&#160;&#160;&print_values</p><br><br>
+						This would be a valid query in this code but with important implications:<br>
+						&#160;&#160;&#160;&#160;The database would return any information where the user_name and user_pass are empty and<br>
+						&#160;&#160;&#160;&#160;The database would return all other information, since '' = '' returns true.<br><br>
 
-						<p class="block">Lambda Syntax:<br>
-						&#160;&#160;print_values = lambda{|i| puts i}<br>
-						To call in method:<br>
-						&#160;&#160;&print_values</p><br><br>
+						Well, that's not good. How do you protect user information when a malicious outsider can effectively request information using code from inside your code? Prepared statements and parameterized queries. All inputs are defined initially, and then each of them is subsequently passed as a parameter. Doing this would look like this:<br><br>
 
-						The first thing you'll probably notice is how similar procs and lambdas look: the syntax is almost the same. Both procs and lambdas are actually Proc objects - that is, they're both instances of the Proc class (notice that the class is capitalized, as opposed to all previous times the word's been written). Lambdas and procs share many features, chief among them that they are objects that can be saved, stored in variables, and reused repeatedly. Unlike blocks, you can pass multiple procs or lambdas to methods and all will be called (if applicable). Lambdas and procs stand alone, and can be called directly if desired using the .call method:<br><br>
+						<p class="block">user_name = get_input<br>
+						user_pass = get_input<br>
+						new_query = $db.prepare("SELECT * FROM user_names WHERE user_name = ? AND user_pass = ?")<br>
+						new_query.execute(user, pass)<br><br></p>
 
-						<p class="block">Callinga a Proc:<br>
-						&#160;&#160;say_hi = Proc.new {puts "I'm calling myself!"}<br>
-						&#160;&#160;say_hi.call<br>
-						&#160;&#160;&#160;&#160;=> "I'm calling myself!</p><br><br>
-
-						We probably wouldn't be talking about two different things if they were identical so...What's the difference between procs and lambdas? There are two main differences generally mentioned when talking about procs and lambdas:<br><br>
-						&#160;&#160;1.How each deals with arguments<br>
-						&#160;&#160;2.How they act when using 'return'<br><br>
-
-						Procs and lambdas deal with arguments differently - specifically how they act when too many arguments are passed to them. Lambdas check the number of arguments passed to them to ensure that it is the proper number while procs do not. This is important when deciding which one to use and how each will act: lambdas, upon receiving the wrong number of arguments, raise an error, while procs will run their code and ignore (will assign 'nil' values to) any superfluous arguments. If no arguments are given and some are expect, lambdas will raise an error, while procs will return nil.<br><br>
-
-						Lambdas and procs also act differently when containing the keyword 'return'. When a proc contains return, it executes and returns as soon as it is called, regardless of what comes after it, while a comparable lambda, when called, will return and then pass control back to the method where it was called:<br><br>
-
-						<p class="block">Returnings a value: Proc<br>
-						&#160;&#160;def hi_proc<br>
-						&#160;&#160;&#160;&#160;hey = Proc.new{return "Return from the inside!"}<br>
-						&#160;&#160;&#160;&#160;hey.call<br>
-						&#160;&#160;&#160;&#160;"Return from the outside!"<br>
-						&#160;&#160;end<br>
-						&#160;&#160;&#160;&#160;puts hi_proc<br>
-						&#160;&#160;&#160;&#160;=> "Return from the inside!"</p><br>
-
-						<p class="block">Returnings a value: Lambda<br>
-						&#160;&#160;def hi_lambda<br>
-						&#160;&#160;&#160;&#160;hey = Proc.new{return "Return from the inside!"}<br>
-						&#160;&#160;&#160;&#160;hey.call<br>
-						&#160;&#160;&#160;&#160;"Return from the outside!"<br>
-						&#160;&#160;end<br>
-						&#160;&#160;&#160;&#160;puts hi_lambda<br>
-						&#160;&#160;&#160;&#160;=> "Return from the outside!"</p><br><br>
-
-						In the former, the method is called and runs until the proc is called, at which point the proc returns its string and...that's it! In contrast, the lambda version of the code continues running through the whole method - thus, the method string is printed. In other words, if containing 'return', a proc will return a value outside of the method - becoming the method output. A lambda containing 'return' will return its value within the method; the value is available to both be used and superseded within the method, depending on the method.</p>	
-					</section>
+						So what does this mean? This SQL command changes how the inputs are passed, effectively adding a second layer of verification to the process. As is the case in many programming languages, this new query forces the code to differentiate between 'returns TRUE' and 'matches exactly'. The new parameterized query is now checked, as a string, against the database values, meaning that ' OR '' = ' would be converted to a string, rather than simply being read as a TRUE input.</section>
 					<section id="share">
 						<ul>
 							<li>Share Post:</li>
