@@ -30,28 +30,28 @@
 						<p class="block">user_name = get_input<br>
 						user_pass = get_input<br>
 						sql_query = "SELECT * FROM user_names WHERE user_name = '#{user_name}' AND user_pass = '#{user_pass}'"<br>
-						$db.execute(sql_query)</p><br><br>
+						$db.execute(sql_query)</p><br>
 
-						If all goes as designed, and the code runs, the query will return the correct data for the given user_name. The problem arises, however, due to the structure of the code. To extend the the example, imagine that some malicious user attempted to inpute the following:
+						If all goes as designed, and the code runs, the query will return the correct data for the given user_name. The problem arises, however, due to the structure of the code. To extend the the example, imagine that some malicious user attempted to inpute the following:<br>
 
 						<p class="block">user_name = ' OR ""=='<br>
-						user_pass = ' OR ""=='</p><br><br>
+						user_pass = ' OR ""=='</p><br>
 
 						This would lead to the following SQL query being input:<br>
 
 						<p class="block">sql_query = "SELECT * FROM user_names WHERE user_name = '' OR '' = '' AND user_pass = '' OR '' = ''<br>
-						$db.execute(sql_query)</p><br><br>
+						$db.execute(sql_query)</p><br>
 						
 						This would be a valid query in this code but with important implications:<br>
 						&#160;&#160;&#160;&#160;The database would return any information where the user_name and user_pass are empty and<br>
 						&#160;&#160;&#160;&#160;The database would return all other information, since '' = '' returns true.<br><br>
 
-						Well, that's not good. How do you protect user information when a malicious outsider can effectively request information using code from inside your code? Prepared statements and parameterized queries. All inputs are defined initially, and then each of them is subsequently passed as a parameter. Doing this would look like this:<br><br>
+						Well, that's not good. How do you protect user information when a malicious outsider can effectively request information using code from inside your code? Prepared statements and parameterized queries. All inputs are defined initially, and then each of them is subsequently passed as a parameter. Doing this would look like this:<br>
 
 						<p class="block">user_name = get_input<br>
 						user_pass = get_input<br>
 						new_query = $db.prepare("SELECT * FROM user_names WHERE user_name = ? AND user_pass = ?")<br>
-						new_query.execute(user, pass)<br><br></p>
+						new_query.execute(user, pass)</p><br>
 
 						So what does this mean? This SQL command changes how the inputs are passed, effectively adding a second layer of verification to the process. As is the case in many programming languages, this new query forces the code to differentiate between 'returns TRUE' and 'matches exactly'. The new parameterized query is now checked, as a string, against the database values, meaning that ' OR '' = ' would be converted to a string, rather than simply being read as a TRUE input.</section>
 					<section id="share">
