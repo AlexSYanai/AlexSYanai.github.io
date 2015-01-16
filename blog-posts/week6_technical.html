@@ -39,9 +39,9 @@
 						&#160;&#160;array.each{|i| puts i}<br>
 						&#160;&#160;&#160;&#160;=> Will print each integer to console</p><br><br>
 
-						Blocks are incredibly useful and common when writing code, but they have a number of shortcomings in certain situations. In order to do more with less (keep your code DRY - Don't Repeat Yourself), you can use procs and lambdas; these objects both allow you to save and reuse blocks of code.<br><br> 
+						Blocks are incredibly useful and common when writing code, but they have a number of shortcomings in certain situations. In order to do more with less (keep your code DRY - Don't Repeat Yourself), you can use procs and lambdas; these objects both allow you to save and reuse blocks of code.<br><br>
 
-						
+
 						<p class="block">Proc Syntax:<br>
 						&#160;&#160;print_values = Proc.new {|i| puts i}<br><br>
 						To call in method:<br>
@@ -85,7 +85,7 @@
 						&#160;&#160;&#160;&#160;puts hi_lambda<br>
 						&#160;&#160;&#160;&#160;=> "Return from the outside!"</p><br><br>
 
-						In the former, the method is called and runs until the proc is called, at which point the proc returns its string and...that's it! In contrast, the lambda version of the code continues running through the whole method - thus, the method string is printed. In other words, if containing 'return', a proc will return a value outside of the method - becoming the method output. A lambda containing 'return' will return its value within the method; the value is available to both be used and superseded within the method, depending on the method.</p>	
+						In the former, the method is called and runs until the proc is called, at which point the proc returns its string and...that's it! In contrast, the lambda version of the code continues running through the whole method - thus, the method string is printed. In other words, if containing 'return', a proc will return a value outside of the method - becoming the method output. A lambda containing 'return' will return its value within the method; the value is available to both be used and superseded within the method, depending on the method.</p>
 					</section>
 					<section id="share">
 						<ul>
@@ -98,7 +98,7 @@
 					</section>
 				</section>
 			</section>
-			<footer><p>Alex Yanai - I'm not sure what to write here - 2014</p></footer>
+			<footer><p>Alex Yanai - 2014</p></footer>
 		</section>
 	</body>
 </html>

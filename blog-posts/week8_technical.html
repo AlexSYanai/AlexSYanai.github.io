@@ -26,9 +26,9 @@
 						In Ruby, code can be grouped together and reused in the form of methods; pretty much any code can be inserted into a method block...including the method itself. For example, let's say we want to define a method to count up to 10:<br>
 
 						<p class="block">
-						&#160;&#160;def counting(n)<br>								
-						&#160;&#160;&#160;&#160;if n <= 10<br> 								  
-						&#160;&#160;&#160;&#160;&#160;&#160;counting(n+1)<br>						
+						&#160;&#160;def counting(n)<br>
+						&#160;&#160;&#160;&#160;if n <= 10<br>
+						&#160;&#160;&#160;&#160;&#160;&#160;counting(n+1)<br>
 						&#160;&#160;&#160;&#160;end<br>
 						&#160;&#160;end</p><br>
 
@@ -37,7 +37,7 @@
 						<p class="block">
 						&#160;&#160;def counting(n)<br>
 						&#160;&#160;&#160;&#160;if n <= 10<br>
-						&#160;&#160;&#160;&#160;&#160;&#160;puts "Counting recursively! #{n}."<br>  
+						&#160;&#160;&#160;&#160;&#160;&#160;puts "Counting recursively! #{n}."<br>
 						&#160;&#160;&#160;&#160;&#160;&#160;counting(n+1)<br>
 						&#160;&#160;&#160;&#160;end<br>
 						&#160;&#160;end<br><br>
@@ -57,7 +57,7 @@
 
 						Though n=1 is the argument passed to the block, and it is the the first case listed, it is actually the last case returned. Understanding this is important to understanding the downsides to recursion; since all of calls before the base case rely on subsequent method calls, they are stored temporarily in the 'call stack'. This temporary storage is trivial in a single instance of a simple method, but can be a progressively larger burden on memory and processing power as complexity increases.<br><br>
 
-						Iteration is The obvious alternative to recursion, and object oriented languages such as Ruby are generally designed to favor it over recursion ( some functional programming languages, on the other hand, don't have the ability to define iterative loops). The following example shows 2 methods to calculate the Fibonacci Sequence, written recursively and iteratively:<br><br>  
+						Iteration is The obvious alternative to recursion, and object oriented languages such as Ruby are generally designed to favor it over recursion ( some functional programming languages, on the other hand, don't have the ability to define iterative loops). The following example shows 2 methods to calculate the Fibonacci Sequence, written recursively and iteratively:<br><br>
 
 						<p class="block">
 						&#160;&#160;RECURSIVE:<br><br>
@@ -93,7 +93,7 @@
 						&#160;&#160;test{ it_fib(5) }<br>
 						&#160;&#160;=> Run time: 0.005075ms</p><br>
 
-						The results are pretty clear: when calculating a Fibonacci Sequence to its 5th value (1,1,2,3,5), the iterative method is roughly 80% faster. Let's run another test, this time calculating the number 30 places into the sequence:<br><br> 
+						The results are pretty clear: when calculating a Fibonacci Sequence to its 5th value (1,1,2,3,5), the iterative method is roughly 80% faster. Let's run another test, this time calculating the number 30 places into the sequence:<br><br>
 
 						<p class="block">
 						&#160;&#160;test{ rec_fib(30) }<br>
@@ -114,7 +114,7 @@
 					</section>
 				</section>
 			</section>
-			<footer><p>Alex Yanai - I'm not sure what to write here - 2014</p></footer>
+			<footer><p>Alex Yanai - 2014</p></footer>
 		</section>
 	</body>
 </html>
