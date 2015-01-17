@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://alexyanai.com/</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/portfolio.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/contact.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blogposts.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/index.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week2_technical.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week3_technical.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week4_technical.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week5_technical.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week6_technical.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week7_technical.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week8_technical.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/blog-posts/week9_cultural.html</loc>
+  <lastmod>2015-01-17T08:37:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>
