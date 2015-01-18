@@ -60,7 +60,7 @@ a:hover {
 	opacity:.9;
 }
 
-a:hover + #about_me{
+a:hover #about_me{
 	display: block;
 }
 
@@ -80,14 +80,27 @@ a:hover + #about_me{
 	top:20%;
 }
 
-#bloglinks > a{
+#bloglinks a{
 	font-size:1.2em;
 	opacity:.8;
 	font-weight:normal;
 }
 
-#bloglinks > a:hover{
+#bloglinks a:hover{
 	opacity:1;
+}
+
+#contact_links table {
+  position:absolute;
+  top:30%;
+  left:45%;
+  width:20%;
+  transition:0.6s;
+}
+
+#contact_links img {
+  opacity:.7;
+  width:75%;
 }
 
 @media screen and (max-width: 1520px){
