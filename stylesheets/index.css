@@ -107,6 +107,51 @@ a:hover #about_me{
   opacity:1;
 }
 
+#stereogram{
+  position:absolute;
+  width:300px;
+  height:185px;
+  top:28%;
+  left:35%;
+  overflow:hidden;
+  border: dashed 1px white;
+}
+
+#stereogram img{
+  position:relative;
+  width:300px;
+  height:392px;
+  top:-4px;
+  transition:top .3s ease-in-out;
+}
+
+#stereogram img:hover{
+  top:-200px;
+}
+
+#home-preview{
+  position:absolute;
+  width:300px;
+  height:185px;
+  top:28%;
+  left:65%;
+  overflow:hidden;
+  border: dashed 1px white;
+}
+
+#home-preview img{
+  position:relative;
+  width:300px;
+  height:392px;
+  top:-4px;
+  transition:top .3s ease-in-out;
+}
+
+#home-preview img:hover{
+  top:-200px;
+}
+
+
 @media screen and (max-width: 1520px){
 
 #subname{
