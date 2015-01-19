@@ -100,7 +100,6 @@ a:hover #about_me{
 #contact_links img {
   opacity:.7;
   width:75%;
-  transition:0.6s;
 }
 
 #contact_links a img:hover {
