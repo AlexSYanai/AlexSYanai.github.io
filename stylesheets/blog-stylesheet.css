@@ -6,7 +6,7 @@ body {
 	margin-right: 2%;
 	margin-top:0;
 	margin-bottom:0;
-  	height: 94%; 
+  	height: 94%;
 }
 
 #main{
@@ -34,8 +34,8 @@ nav{
 	width:45%;
 	left:85%;
 	top:7%;
-    font-size:1.45em; 
-    margin:0;   
+    font-size:1.45em;
+    margin:0;
 }
 
 
@@ -90,7 +90,7 @@ nav{
 	margin-right:0%;
 }
 
-#share ul li:nth-child(5){
+#share ul li:nth-child(6){
 	border-right:initial;
 	margin-right:0%;
 }
