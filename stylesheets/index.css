@@ -153,11 +153,6 @@ a:hover #about_me{
 
 @media screen and (max-width:1520px){
 
-#subname{
-	font-size:1em;
-	padding-top:.25em;
-}
-
 #links {
 	padding:18px;
 	line-height:3em;
@@ -174,48 +169,25 @@ a {
 	font-size:4em;
 }
 
-a:hover {
-	opacity:1;
-}
-
 #about_me {
 	display:none;
-	color:white;
 	line-height:0.7em;
-	font-weight:normal;
 	letter-spacing:0px;
 	font-size:.9em;
-	opacity:.9;
-}
-
-a:hover + #about_me {
-	display:block;
 }
 
 #bloglinks {
-	position:absolute;
 	left:35%;
 	top:25%;
 }
 
 #bloglinks > a {
 	font-size:.95em;
-	opacity:.8;
-	font-weight:normal;
-}
-
-#bloglinks > a:hover {
-	opacity:1;
 }
 
 }
 
 @media screen and (max-width:1100px){
-
-#subname {
-	font-size:1em;
-	padding-top:.25em;
-}
 
 #links {
 	padding:18px;
@@ -225,16 +197,7 @@ a:hover + #about_me {
 }
 
 a {
-	text-decoration:none;
-	color:white;
-	font-weight:bold;
-	opacity:.75;
-	transition:0.6s;
 	font-size:3.7em;
-}
-
-a:hover {
-	opacity:1;
 }
 
 #about_me {
@@ -244,27 +207,22 @@ a:hover {
 	font-weight:normal;
 	letter-spacing:0px;
 	font-size:.75em;
-	opacity:.9;
-}
-
-a:hover + #about_me {
-	display:block;
 }
 
 #bloglinks {
-	position:absolute;
 	left:37%;
 	top:30%;
 }
 
 #bloglinks > a {
 	font-size:1.1em;
-	opacity:.8;
-	font-weight:normal;
 }
 
-#bloglinks > a:hover {
-	opacity:1;
+#stereogram{
+  left:32%;
 }
 
+#home-preview{
+  left:68%;
+}
 }
