@@ -186,6 +186,13 @@ a:hover + #about_me{
   padding-right:10px;
 }
 
+#about_page p a:last-child{
+  color:white;
+  line-height:1.25em;
+  font-size:1em;
+  opacity:.9;
+}
+
 @media screen and (max-width:1520px){
 
 #links {
