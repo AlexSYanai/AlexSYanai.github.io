@@ -60,7 +60,7 @@ a:hover {
 	opacity:.9;
 }
 
-a:hover #about_me{
+a:hover + #about_me{
 	display:block;
 }
 
@@ -92,9 +92,9 @@ a:hover #about_me{
 
 #contact_links table {
   position:absolute;
-  top:30%;
-  left:45%;
-  width:30%;
+  top:23%;
+  left:40%;
+  width:28%;
 }
 
 #contact_links img {
@@ -133,7 +133,7 @@ a:hover #about_me{
   width:300px;
   height:185px;
   top:28%;
-  left:65%;
+  left:58%;
   overflow:hidden;
   border:dashed 1px white;
 }
@@ -150,6 +150,41 @@ a:hover #about_me{
   top:-200px;
 }
 
+#about_page{
+  position:absolute;
+  width:60%;
+  height:75%;
+  top:19%;
+  left:35%;
+}
+
+#about_page p {
+  color:white;
+  line-height:1.25em;
+  font-weight:normal;
+  font-size:1.25em;
+  opacity:.9;
+}
+
+#about_page p a{
+  color:white;
+  line-height:1.25em;
+  font-weight:normal;
+  font-size:1.25em;
+  opacity:.9;
+}
+
+#skills{
+  text-align:left;
+  color:white;
+  left:35%;
+  top:40%;
+  opacity:.9;
+}
+
+#skills th{
+  padding-right:10px;
+}
 
 @media screen and (max-width:1520px){
 
@@ -174,6 +209,10 @@ a {
 	line-height:0.7em;
 	letter-spacing:0px;
 	font-size:.9em;
+}
+
+a:hover + #about_me{
+  display:block;
 }
 
 #bloglinks {
@@ -207,6 +246,15 @@ a {
 	font-weight:normal;
 	letter-spacing:0px;
 	font-size:.75em;
+  opacity:.9;
+}
+
+a:hover {
+  opacity:1;
+}
+
+a:hover + #about_me{
+  display:block;
 }
 
 #bloglinks {
@@ -224,5 +272,12 @@ a {
 
 #home-preview{
   left:68%;
+}
+
+#contact_links table {
+  position:absolute;
+  top:30%;
+  left:37%;
+  width:30%;
 }
 }
