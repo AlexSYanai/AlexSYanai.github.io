@@ -6,6 +6,10 @@ html, body {
   background-color:#252D36;
 }
 
+ul{
+  list-style-type: none;
+}
+
 #main {
  	width:92.5%;
   	font-family:'Open Sans Condensed';
@@ -233,7 +237,7 @@ a:hover + #about_me{
 
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1200px){
 
 #links {
 	padding:18px;
@@ -287,4 +291,16 @@ a:hover + #about_me{
   left:37%;
   width:30%;
 }
+}
+
+@media screen and (max-width:900px){
+  #stereogram{
+    left:45%;
+    top:18%;
+  }
+
+  #home-preview{
+    left:45%;
+    top:48%;
+  }
 }
