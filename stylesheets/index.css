@@ -237,7 +237,7 @@ a:hover + #about_me{
 
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1300px){
 
 #links {
 	padding:18px;
@@ -282,7 +282,7 @@ a:hover + #about_me{
 }
 
 #home-preview{
-  left:68%;
+  left:62%;
 }
 
 #contact_links table {
