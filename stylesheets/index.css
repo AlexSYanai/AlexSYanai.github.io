@@ -73,8 +73,9 @@ a:hover + #about_me{
   float:right;
   bottom:0;
   right:0;
-  margin-right:5%;
-  width:14%;
+  margin-right:7.5%;
+  margin-bottom:5%;
+  width:9%;
   opacity:.75;
 }
 
