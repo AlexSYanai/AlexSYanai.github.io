@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  height: 100%;
+  height: 85%;
 }
 
 ul{
@@ -231,6 +231,17 @@ a:hover + #about_me{
   line-height:1.25em;
   font-size:1em;
   opacity:.9;
+}
+
+footer {
+  margin-left:9%;
+}
+
+footer a {
+  font-size: 10px;
+  opacity:.45;
+  color: white;
+  font-family:'Open Sans Condensed';
 }
 
 @media screen and (min-height:700px){
