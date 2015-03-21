@@ -232,3 +232,22 @@ a:hover + #about_me{
   font-size:1em;
   opacity:.9;
 }
+
+@media screen and (min-height:700px){
+  #contact_links table {
+    position:absolute;
+    top:28%;
+  }
+
+  #project-links {
+    position:absolute;
+    top: 20%;
+  }
+}
+
+@media screen and (min-height:600px){
+  #contact_links table {
+    position:absolute;
+    top:35%;
+  }
+}
