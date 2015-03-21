@@ -8,32 +8,77 @@
 
 <url>
   <loc>http://alexyanai.com/</loc>
-  <lastmod>2015-01-21T07:38:49+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://alexyanai.com/portfolio.html</loc>
-  <lastmod>2015-01-21T07:38:49+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://alexyanai.com/contact.html</loc>
-  <lastmod>2015-01-21T07:38:49+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://alexyanai.com/blogposts.html</loc>
-  <lastmod>2015-01-21T07:38:49+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://alexyanai.com/about.html</loc>
-  <lastmod>2015-01-21T07:38:49+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://alexyanai.com/index.html</loc>
-  <lastmod>2015-01-21T07:38:49+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/mkdnEditor/</loc>
+  <lastmod>2015-03-11T02:02:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/askingquestions.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/recursion.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/sqlinjections.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/blocksprocslambdas.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/rubyclasses.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/groupby.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/jshistory.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://alexyanai.com/posts/cssboxmodel.html</loc>
+  <lastmod>2015-03-09T07:34:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>
