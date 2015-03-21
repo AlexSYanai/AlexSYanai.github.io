@@ -251,3 +251,22 @@ a:hover + #about_me{
     top:35%;
   }
 }
+
+@media screen and (min-width:1500px){
+  #contact_links table {
+    position:absolute;
+    top:25%;
+  }
+
+  #bloglinks{
+    position:absolute;
+    top:26%;
+    left:35%;
+  }
+
+  #about_page{
+    position:absolute;
+    top:22%;
+    left:35%;
+  }
+}
