@@ -244,10 +244,6 @@ footer a {
   font-family:'Open Sans Condensed';
 }
 
-#rich-snippet {
-  display: none;
-}
-
 @media screen and (min-height:700px){
   #contact_links table {
     position:absolute;
