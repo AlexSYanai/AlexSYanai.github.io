@@ -244,6 +244,12 @@ footer a {
   font-family:'Open Sans Condensed';
 }
 
+#copy {
+  display: inline;
+  color: white;
+  font-size: 10px;
+}
+
 @media screen and (min-height:700px){
   #contact_links table {
     position:absolute;
