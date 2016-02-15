@@ -178,9 +178,9 @@ canvas {
   margin-top: 10%;
 }
 
-#t2:target #p2,
-#t3:target #p3,
-#t4:target #p4 {
+#about:target #p2,
+#contact:target #p3,
+#projects:target #p4 {
   transform:         translateX(-185%);
   -webkit-transform: translateX(-185%);
   -moz-transform:    translateX(-185%);
@@ -188,33 +188,33 @@ canvas {
   transition-delay: .4s !important;
 }
 
-#t2:target #p1 .nav-section, 
-#t3:target #p1 .nav-section,
-#t4:target #p1 .nav-section {
+#about:target #p1 .nav-section, 
+#contact:target #p1 .nav-section,
+#projects:target #p1 .nav-section {
   -webkit-filter: blur(3px);
 }
 
-#t2:target #menu .nav-section,
-#t3:target #menu .nav-section,
-#t4:target #menu .nav-section {
+#about:target #menu .nav-section,
+#contact:target #menu .nav-section,
+#projects:target #menu .nav-section {
   transform:         scale(.6);
   -webkit-transform: scale(.6);
   -moz-transform:    scale(.6);
   -o-transform:      scale(.6);
   transition-delay: .25s;
 }
-#t2:target #second,
-#t3:target #third,
-#t4:target #fourth {
+#about:target #second,
+#contact:target #third,
+#projects:target #fourth {
   transform:         scale(.7) !important;
   -webkit-transform: scale(.7) !important;
   -moz-transform:    scale(.7) !important;
   -o-transform:      scale(.7) !important;
 }
 
-#t2:target .page#p2 .nav-section,
-#t3:target .page#p3 .nav-section,
-#t4:target .page#p4 .nav-section {
+#about:target .page#p2 .nav-section,
+#contact:target .page#p3 .nav-section,
+#projects:target .page#p4 .nav-section {
   transform:         translateX(0) !important;
   -webkit-transform: translateX(0) !important;
   -moz-transform:    translateX(0) !important;
@@ -329,9 +329,9 @@ canvas {
 }
 
 @media all and (max-width: 1600px) {
-  #t2:target #p2,
-  #t3:target #p3,
-  #t4:target #p4 {
+  #about:target #p2,
+  #contact:target #p3,
+  #projects:target #p4 {
     transform:         translateX(-180%);
     -webkit-transform: translateX(-180%);
     -moz-transform:    translateX(-180%);
@@ -341,6 +341,19 @@ canvas {
 
   .sublist-header { font-size: 25px; }
   .sublist-items  { font-size: 15px; }
+}
+
+@media all and (max-width: 1600px) {
+  #skill-list {
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .skill             { width: 9%; }
+  .sublist-items     { font-size: 15px; }
+  .sublist-header    { font-size: 20px; }
+  .page .nav-section { margin-left: 23%; }
+  #project-links     { width: 100%; }
 }
 
 @media all and (max-height: 800px) {
