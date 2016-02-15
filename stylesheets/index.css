@@ -225,6 +225,7 @@ canvas {
 .contact-links-td {
   text-align: center;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 #contact-table {
