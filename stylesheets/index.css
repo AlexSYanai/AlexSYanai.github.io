@@ -327,7 +327,7 @@ canvas {
   background-position: 50% 50%;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1600px) {
   #t2:target #p2,
   #t3:target #p3,
   #t4:target #p4 {
@@ -337,6 +337,9 @@ canvas {
     -o-transform:      translateX(-180%);
     transition-delay: .4s !important;
   }
+
+  .sublist-header { font-size: 25px; }
+  .sublist-items  { font-size: 15px; }
 }
 
 @media all and (max-height: 800px) {
