@@ -1,2 +1,2 @@
-AlexSYanai.github.io
+AlexYanai.github.io
 ====================
